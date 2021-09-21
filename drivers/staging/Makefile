@@ -16,6 +16,7 @@ obj-$(CONFIG_R8188EU)		+= rtl8188eu/
 obj-$(CONFIG_RTL8188EU)         += rtl8188eus/
 obj-$(CONFIG_88XXAU)            += rtl8812au/
 obj-$(CONFIG_RTL8814AU)         += rtl8814au/
+obj-$(CONFIG_RTL8821CU)         += rtl8821CU/
 obj-$(CONFIG_R8822BE)		+= rtlwifi/
 obj-$(CONFIG_RTS5208)		+= rts5208/
 obj-$(CONFIG_NETLOGIC_XLR_NET)	+= netlogic/

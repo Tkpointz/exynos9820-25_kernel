@@ -48,6 +48,8 @@ source "drivers/staging/rtl8812au/Kconfig"
 
 source "drivers/staging/rtl8814au/Kconfig"
 
+source "drivers/staging/rtl8821CU/Kconfig"
+
 source "drivers/staging/rtlwifi/Kconfig"
 
 source "drivers/staging/rts5208/Kconfig"
