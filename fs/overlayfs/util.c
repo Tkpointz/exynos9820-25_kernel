@@ -41,7 +41,7 @@ const struct cred *ovl_override_creds(struct super_block *sb)
 {
 	struct ovl_fs *ofs = sb->s_fs_info;
 
-	return override_creds(ofs->creator_cred);
+	return ofs->creator_cred;
 }
 
 struct super_block *ovl_same_sb(struct super_block *sb)
