@@ -94,14 +94,7 @@ ZIP_FINAL="Sploitpay-d2s-$DATE"
 
 }
 
-sign_zip_post() {
-#signing zip with aosp keys
-echo "|| Signing Zip ||"
-tg_post_msg "<code>Signing Zip file with AOSP keys..</code>"
-curl -sLo zipsigner-4.0.jar https://raw.githubusercontent.com/baalajimaestro/AnyKernel3/master/zipsigner-4.0.jar
-java -jar zipsigner-4.0.jar "$ZIP_FINAL".zip "$ZIP_FINAL"-signed.zip
-ZIP_FINAL="$ZIP_FINAL-signed"
-
+zip_post() {
 # post kernel zip file
 tg_post_build "$ZIP_FINAL.zip" "$Date"
 
@@ -119,4 +112,4 @@ tg_post_build "$ZIP_MODULES.zip"
 build_kernel
 build_image_dtbo
 generate_zip
-sign_zip_post
+zip_post
